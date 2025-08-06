@@ -12,6 +12,10 @@
 #include <errno.h>
 #include <glob.h>
 
+#ifndef PATH_MAX
+#define PATH_MAX 4096
+#endif
+
 #define MAX_COMMAND_LENGTH 1024
 #define MAX_ARGS 256
 #define MAX_HISTORY 1000
